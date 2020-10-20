@@ -1,6 +1,6 @@
 print("Welcome to Bank of Parota ATM")
 restart = 'Y'
-chances = 3
+chances = 3							#the total number of tries a user can perform in case of incorrect password
 balance = 100
 
 while chances >= 0:
@@ -16,7 +16,7 @@ while chances >= 0:
             if option == 1:
                 print("your available balance is : ",balance )
                 restart = input("Would you wish to continue: ") 
-                if restart  in ('n','no','NO','N'):
+                if restart  in ('n','no','NO','N'):		#gets input from the user and if the input is not in the tuple specified before, the programs executes from the beginning(4 options)
                     print("Thank you")
                     break
             elif option == 2:
@@ -42,12 +42,12 @@ while chances >= 0:
                     break
 
             elif option == 4:
-                print("thank you")
+                print("thank you")				#greets and quit the program
                 quit()
 
     elif pin != ('1234'):
         print("incorrect pin!!")
-        chances-=1 
+        chances-=1 						#Returns to enter your atm pin
 
         if chances == 0:
             print("no more tries")
