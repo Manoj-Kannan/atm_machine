@@ -6,7 +6,7 @@ balance = 100
 while chances >= 0:
     pin = int(input("Enter your ATM pin: "))
     if pin == (1234):
-        print("You have entered your pin correctly")
+        print("You have entered your pin correctly \n")
         while restart not in ('n','no','NO','N'):
             print("Press 1 to check your balance \n")
             print("Press 2 to withdraw cash\n")
